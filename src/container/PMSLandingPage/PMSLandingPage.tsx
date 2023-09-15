@@ -4,14 +4,17 @@ import { profileAdd, profileList } from "../../assets";
 
 import "./PMSLandingPage.css";
 
+// Landing Page
 const PMSLandingPage = () => {
+  // To conditionally navigate using useNavigate
   const navigate = useNavigate();
+
   const addUsersPageClickHandler = () => {
-    navigate("add-user");
+    navigate("add-profile");
   };
 
   const usersListPageClickHandler = () => {
-    navigate("users-list");
+    navigate("profiles-list");
   };
 
   return (

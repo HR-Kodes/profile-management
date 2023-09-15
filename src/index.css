@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  /* font-weight: 200; */
 }
 
 :root {
@@ -69,6 +68,22 @@ html {
       transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+}
+
+.pms-primary-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pms-primary-heading hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 @media (prefers-color-scheme: light) {
