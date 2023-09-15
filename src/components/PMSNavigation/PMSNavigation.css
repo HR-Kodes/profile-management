@@ -1,0 +1,26 @@
+.pms-navigation-landing-page-container {
+  position: fixed;
+  left: 3rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+
+.pms-navigation-profiles-list-container {
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+
+.pms-navigation-text {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+.pms-navigation-text-icon {
+  padding-top: 3px;
+}

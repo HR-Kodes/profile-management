@@ -1,5 +1,5 @@
 import PMSLandingPage from "./PMSLandingPage/PMSLandingPage";
-import PMSAddUser from "./PMSAddUser/PMSAddUser";
-import PMSUsersList from "./PMSUsersList/PMSUsersList";
+import PMSAddProfile from "./PMSAddProfile/PMSAddProfile";
+import PMSProfilesList from "./PMSProfilesList/PMSProfilesList";
 
-export { PMSLandingPage, PMSAddUser, PMSUsersList };
+export { PMSLandingPage, PMSAddProfile, PMSProfilesList };

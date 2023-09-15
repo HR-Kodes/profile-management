@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { PMSAddUser, PMSLandingPage, PMSUsersList } from "../container";
+import { PMSAddProfile, PMSLandingPage, PMSProfilesList } from "../container";
+
+// creating routes ...
 
 export const router = createBrowserRouter([
   {
@@ -7,11 +9,11 @@ export const router = createBrowserRouter([
     element: <PMSLandingPage />,
   },
   {
-    path: "add-user",
-    element: <PMSAddUser />,
+    path: "add-profile",
+    element: <PMSAddProfile />,
   },
   {
-    path: "users-list",
-    element: <PMSUsersList />,
+    path: "profiles-list",
+    element: <PMSProfilesList />,
   },
 ]);

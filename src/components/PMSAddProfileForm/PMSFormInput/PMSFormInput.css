@@ -1,0 +1,117 @@
+.pms-form-input-component-parent-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2;
+}
+
+.pms-form-input-component-input-label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pms-form-input-component-input-label {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pms-form-input-component-input-field::-webkit-outer-spin-button,
+.pms-form-input-component-input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.pms-form-input-component-input-field[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.pms-form-input-component-input-field {
+  width: 100%;
+  padding: 0.375rem;
+  font-weight: 500;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  /* border-color: rgb(203 213 225); */
+  background-color: #fff;
+  border: 1px solid #caced1;
+
+  &::-webkit-input-placeholder {
+    /* For Chrome/Opera/Safari */
+    opacity: 0.6;
+  }
+  &::-moz-placeholder {
+    /* For Firefox 19+ */
+    opacity: 0.6;
+  }
+  &:-ms-input-placeholder {
+    /* For IE 10+ */
+    opacity: 0.6;
+  }
+  &:-moz-placeholder {
+    /* For Firefox 18- */
+    opacity: 0.6;
+  }
+}
+
+.pms-form-input-component-input-error-parent-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pms-form-input-component-input-error-parent-container {
+  opacity: 1;
+}
+
+.pms-form-input-error-text {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: 600;
+  color: rgb(239 68 68);
+  background-color: rgb(254 226 226);
+  border-radius: 0.375rem; /* 6px */
+}
+
+.pms-form-input-error-text {
+  animation: popUp 0.2s ease-in-out;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pms-form-input-component-input-label {
+    font-size: 0.8rem;
+  }
+
+  .pms-form-input-component-input-field {
+    font-size: 0.55rem;
+    &::-webkit-input-placeholder {
+      /* For Chrome/Opera/Safari */
+      font-size: 0.55rem;
+    }
+    &::-moz-placeholder {
+      /* For Firefox 19+ */
+      font-size: 0.55rem;
+    }
+    &:-ms-input-placeholder {
+      /* For IE 10+ */
+      opacity: 0.6;
+    }
+    &:-moz-placeholder {
+      /* For Firefox 18- */
+      opacity: 0.6;
+    }
+  }
+}

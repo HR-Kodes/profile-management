@@ -1,0 +1,50 @@
+.pms-main-form {
+  width: 100%;
+}
+
+.pms-main-form-parent-container {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.pms-main-form-add-user-inputs-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pms-main-form-submit-button-container {
+  margin-top: 5px;
+}
+
+.pms-main-form-submit-button {
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding: 0.7rem;
+  font-weight: 600;
+  color: rgb(255 255 255);
+  background-color: rgb(173, 195, 248);
+  border-radius: 0.375rem; /* 6px */
+  border: none;
+
+  &:hover {
+    background-color: rgba(173, 196, 248, 0.747);
+  }
+}
+
+@media (max-width: 768px) {
+  .pms-main-form-submit-button {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pms-main-form-submit-button {
+    font-size: 0.8rem;
+  }
+}
