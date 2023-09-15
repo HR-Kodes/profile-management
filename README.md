@@ -12,6 +12,12 @@ Through the project PMS - Profile Management System naming convention is followe
 - [utils] for logic functions and interfaces/types.
 - [assets] for any images or logos.
 
+### Project Screens
+
+![Landing Page](landingPagePreview.png)
+![Add Profile Page](addProfilePreview.png)
+![Profiles List Page](profilesListPreview.png)
+
 ## Installation
 
 This project requires [Node.js](https://nodejs.org/) v10+ to run.
